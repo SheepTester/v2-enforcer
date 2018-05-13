@@ -3,5 +3,10 @@
   "serverID": "429087375822684170",
   "colour": "3F51B5",
   "errorColour": "B00020",
-  "footerText": "ALL HAIL THE DEMOCRACY"
+  "footerText": "ALL HAIL THE DEMOCRACY",
+  "citizenRoles": [
+    "430143142348718120",
+    "430143147562237954",
+    "429879678694850581"
+  ]
 }

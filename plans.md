@@ -37,6 +37,8 @@ v2 rules
 ```
 `v2 rules` links to the Basic Rules v2 doc.
 
+`v2 who` lists the reps, judges, enforcers, leader
+
 ## citizens
 ```
 v2 proposal Description of the new rule or whatever.
@@ -84,7 +86,7 @@ if judge, newprops
 ```
 v2 veto 32
 ```
-vetoes the given law. outputs a veto.
+vetoes the given law. outputs a veto ID.
 
 ## enforcer
 ```
