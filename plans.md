@@ -7,7 +7,7 @@ the above channels I can't change to my liking
 
 keep the old channels though; put them in a category, rename them to `#proposals-legacy` etc. you can disable sending messages if you want
 
-# create roles
+# ~~create roles~~ (ignore this section)
 ```
 gunn
 paly
@@ -36,6 +36,7 @@ v2 help
 v2 rules
 ```
 `v2 rules` links to the Basic Rules v2 doc.
+
 ## citizens
 ```
 v2 proposal Description of the new rule or whatever.
@@ -53,6 +54,10 @@ makes a Complaint for the Judges, but only if the user is of the government
 v2 run leader I will do this and that.
 ```
 if not in DMs, delete and DM the user to use DMs.
+```
+v2 resign leader
+```
+resigns from position
 
 ## reps
 ```

@@ -8,8 +8,8 @@ class Args {
   nextArg() {
     let prevIndex = this.index;
     this.index = this.string.indexOf(Args.separator, prevIndex);
-    if (!~this.index) this.index = this.string.length - 1;
-    return this.string.slice(prevIndex, this.index++);
+    if (!~this.index) this.index = this.string.length;
+    return this.string.slice(prevIndex, this.index++).toLowerCase();
   }
 
   rest() {

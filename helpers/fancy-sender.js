@@ -1,4 +1,4 @@
-const BotInfo = require("./botinfo.json");
+const BotInfo = require("../botinfo.json");
 
 function makeEmbed(colour, title, content) {
   return {
@@ -17,18 +17,19 @@ module.exports = {
     channel.send({
       embed: makeEmbed(BotInfo.colour, title, content)
     }).catch(err => {
-      channel.send({
-        embed: makeEmbed(BotInfo.errorColour, "There was a problem:", "```\n" + err.message + "\n```")
-      });
+      this.err(channel, err.message);
     });
   },
   reply(origMsg, content) {
     origMsg.channel.send({
       embed: makeEmbed(BotInfo.colour, "to @" + origMsg.author.tag + ":", content, origMsg.client)
     }).catch(err => {
-      origMsg.channel.send({
-        embed: makeEmbed(BotInfo.errorColour, "There was a problem:", "```\n" + err.message + "\n```")
-      });
+      this.err(origMsg.channel, err.message);
+    });
+  },
+  err(channel, content) {
+    channel.send({
+      embed: makeEmbed(BotInfo.errorColour, "There was a problem:", "```\n" + content + "\n```")
     });
   }
 };

@@ -4,10 +4,11 @@ const client = new Discord.Client();
 const Token = require("./token.json");
 const BotInfo = require("./botinfo.json");
 
-const Evaluate = require("./evaluator.js");
+const Evaluate = require("./helpers/evaluator.js");
 
 client.on("ready", () => {
   console.log("I'm in.");
+  client.user.setActivity("THE DEMOCRACY.", {type: "WATCHING"});
 });
 
 client.on("message", msg => {
