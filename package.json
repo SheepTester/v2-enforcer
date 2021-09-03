@@ -1,7 +1,7 @@
 {
   "name": "v2-enforcer",
   "version": "1.0.0",
-  "description": "bot that enforces the Basic Rules v2",
+  "description": "bot that helps with the Democracy",
   "main": "main.js",
   "author": "l'shep",
   "dependencies": {
